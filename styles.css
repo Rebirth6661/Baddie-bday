@@ -1,0 +1,104 @@
+
+.corinthia-regular {
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.griffy-regular {
+  font-family: "Griffy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ephesis-regular {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2619f; /* solid pink */
+  color: white;
+  font-family Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: black;
+  font-family:corinthia;
+  font-size: 45px;
+  margin-top: 1em;
+  animation: pop-in 1s ease-out;
+}
+h2{
+  font-family: Griffy;
+  font-size: 1em;
+  
+}
+p {
+  font-family:Ephesis;
+  font-size: 2em;
+  
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.glow-box {
+  max-width: 70%;
+  width: 360px;
+  margin: 3em auto;
+  padding: 1.2em 1.5em;
+  background-color: #b0002a;
+  border-radius: 1em;
+  box-shadow: 0 0 15px #d00036, 0 0 30px #ff4b6e;
+  animation: pulse-glow 2s infinite;
+  text-align: left;
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 10px #d00036, 0 0 20px #d00036; }
+  50% { box-shadow: 0 0 25px #ff4b6e, 0 0 50px #ff4b6e; }
+  100% { box-shadow: 0 0 10px #d00036, 0 0 20px #d00036; }
+}
+
+.glow-box h2 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.glow-box p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0.5em 0 0 0;
+  color: white;
+}
+
+/* Confetti */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+}
